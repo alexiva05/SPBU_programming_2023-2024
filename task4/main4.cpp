@@ -44,7 +44,7 @@ int main() {
 
         std::cin >> user_input;
         while (true) {
-            if (std::find(strings.begin(), strings.end(), user_input) == strings.end()) {
+            if (std::find(strings.begin(), strings.end(), user_input) == strings.end() && !if_num(user_input)) {
                 std::cout << "Введены некорректные символы!!!" << std::endl;
                 std::cin >> user_input;
             } else {
